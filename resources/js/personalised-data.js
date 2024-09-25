@@ -5,7 +5,7 @@ class PersonalisedData {
 
     init() {
         var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
+        xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 // Parse the response.
                 let response = JSON.parse(this.responseText);
@@ -23,6 +23,6 @@ class PersonalisedData {
     }
 }
 
-window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("DOMContentLoaded", function () {
     new PersonalisedData();
 });
