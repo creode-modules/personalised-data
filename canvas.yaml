@@ -1,0 +1,27 @@
+preset: package
+
+namespace: Creode\PersonalisedData
+user-auth-model: App\Models\User
+
+paths:
+  src: src
+  resource: resources
+
+factory:
+  path: database/factories
+
+migration:
+  path: database/migrations
+  prefix: ''
+
+console:
+  namespace: Creode\PersonalisedData\Console
+
+model:
+  namespace: Creode\PersonalisedData\Models
+
+provider:
+  namespace: Creode\PersonalisedData\Providers
+
+testing:
+  namespace: Creode\PersonalisedData\Tests

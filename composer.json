@@ -1,0 +1,29 @@
+{
+    "name": "creode/personalised-data",
+    "description": "Creates a new hookable endpoint allowing you to populate personalised user data through a single url.",
+    "type": "library",
+    "require": {
+        "illuminate/support": "*"
+    },
+    "require-dev": {
+        "orchestra/canvas": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Creode\\PersonalisedData\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Creode",
+            "email": "contact@creode.co.uk"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Creode\\PersonalisedData\\PersonalisedDataServiceProvider"
+            ]
+        }
+    }
+}
