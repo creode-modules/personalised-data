@@ -19,6 +19,7 @@ class PersonalisedData {
         };
 
         xhttp.open("GET", "/ajax/get-personalised-data", true);
+        xhttp.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
         xhttp.send();
     }
 }
