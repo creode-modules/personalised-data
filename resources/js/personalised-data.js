@@ -20,6 +20,8 @@ class PersonalisedData {
 
         xhttp.open("GET", "/ajax/get-personalised-data", true);
         xhttp.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        xhttp.setRequestHeader('Content-Type', 'application/json');
+        xhttp.setRequestHeader('Accepts', 'application/json');
         xhttp.send();
     }
 }
